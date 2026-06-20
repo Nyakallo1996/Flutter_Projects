@@ -5,9 +5,10 @@ void main() {
     MaterialApp(
       home: Scaffold(
         body: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
         gradient: LinearGradient(
-          colors: 
+          colors: [  Color.fromARGB(255, 83, 18, 196),
+           Color.fromARGB(255, 39, 11, 87) ],
         ),
       ), 
       child: const Center(

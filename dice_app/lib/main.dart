@@ -9,6 +9,8 @@ void main() {
         gradient: LinearGradient(
           colors: [  Color.fromARGB(255, 83, 18, 196),
            Color.fromARGB(255, 39, 11, 87) ],
+           begin: Alignment.topLeft,
+           end: Alignment.bottomLeft,
         ),
       ), 
       child: const Center(

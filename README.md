@@ -41,7 +41,7 @@ The course covers:
 flutter_projects/
 │
 ├── project_01/Dice_App
-├── project_02/
+├── project_02/Quiz_Game
 ├── project_03/
 ├── expense_tracker/
 ├── meals_app/

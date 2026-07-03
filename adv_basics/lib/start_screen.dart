@@ -5,6 +5,10 @@ class StartScreen extends StatelessWidget {
 
   @override
   Widget build(context) {
-    return const Text('Start Screen');
+    return Center(
+      child: Column(
+        children: [Image.asset('assets/images/quiz-logo.png', width: 300)],
+      ),
+    );
   }
 }

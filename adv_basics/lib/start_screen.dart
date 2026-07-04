@@ -7,7 +7,14 @@ class StartScreen extends StatelessWidget {
   Widget build(context) {
     return Center(
       child: Column(
-        children: [Image.asset('assets/images/quiz-logo.png', width: 300)],
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Image.asset('assets/images/quiz-logo.png', width: 300),
+          const SizedBox(height: 80),
+          const Text('learn flutter the fun way!', style: TextStyle(
+            color: Color.fromARGB(255, 237, 223, 252)
+          )),
+        ],
       ),
     );
   }

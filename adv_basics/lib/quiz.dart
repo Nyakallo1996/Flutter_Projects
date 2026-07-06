@@ -12,11 +12,11 @@ class Quiz extends StatefulWidget {
 }
 
 class _QuizState extends State<Quiz> {
-  Widget? activeScreen;
+  Widget? activeScreen; // i assigned the activeScreen variable as a widge which is allowed to return null(?)
 
   @override
   void initState() {
-    activeScreen = StartScreen(switchScreen);
+    activeScreen = StartScreen(switchScreen); //State in which i wish my app to start in
     super.initState();
   }
 

@@ -1,16 +1,29 @@
 import 'package:flutter/material.dart';
 
-import 'package:dice_app/gradient_container.dart';
-
 void main() {
-  runApp(
-     const MaterialApp(
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(primarySwatch: Colors.blue),
       home: Scaffold(
-        body: GradientContainer(
-          Color.fromARGB(255, 33, 5, 109),
-          Color.fromARGB(255, 68, 21, 149),
+        appBar: AppBar(title: const Text('First App')),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: const [
+              Text('Hello World!'),
+              Text('It\'s time to learn Flutter!'),
+            ],
+          ),
         ),
       ),
-    ),
-  );
+    );
+  }
 }
